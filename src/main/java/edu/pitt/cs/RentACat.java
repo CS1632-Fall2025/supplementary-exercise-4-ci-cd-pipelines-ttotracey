@@ -13,8 +13,9 @@ public interface RentACat {
 			case SOLUTION:
 				return new RentACatSolution();
 			case MOCK:
-				// TODO: Return a mock object that emulates the behavior of a real object.
-				return null;
+				// Return a mock object that emulates the behavior of the real object, if you feel you need one.
+				RentACat rentMock = Mockito.mock(RentACat.class);
+				return rentMock;
 			default:
 				assert (false);
 				return null;
